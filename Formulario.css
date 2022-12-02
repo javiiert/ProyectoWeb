@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+body{
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-color:black;
+
+}
+a{
+    text-decoration: none;
+}
+header{
+    text-align: center;
+    margin-top: 25px;
+    background-image: url(./img/michael-jordan2.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    
+}
+footer{
+    background-image: url(./img/footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    text-align: center;
+    font-family: initial;
+    letter-spacing: 10px;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    padding-top: 28px;
+    margin-top: 20px;
+    
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+span{
+    color:red;
+    font-size: 120px;
+}
+h1{
+    font-size: 90px;
+    letter-spacing: 10px;
+    color: white;
+}
+h3{
+    padding-top: 15px;
+    padding-bottom: 25px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    letter-spacing: 13px;
+    font-family: initial;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: -1px -1px 2px white;
+}   
+
+.menu > a{
+    margin: 20px 40px;
+    color:red;
+    font-size: 30px;
+    font-weight: 15%;
+
+}
+.menu > a.activo{
+    color: red;
+}
+.menu > a:hover{
+    border-radius: 10px;
+    border: white;
+    color: white;
+    background-color: red;
+}
+.contacto{
+    background-image: url(./img/fondo.jpg);
+    border: solid 5px red;
+    width: 40%;
+    margin: auto;
+    padding: 15px;
+}
+.contacto h1{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 70px;
+    font-family: initial;
+    letter-spacing: 15px;
+}
+.linea{
+    background: red;
+    height: 5px;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;  
+}
+
+.formulario > *{
+    margin: 10px 0px 0px 0px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+}
+.cajapass > *{
+    background-color: transparent;
+    color: white;
+}
+
+

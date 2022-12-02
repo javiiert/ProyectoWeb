@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body{
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-color:black;
+
+}
+a{
+    text-decoration: none;
+}
+header{
+    text-align: center;
+    margin-top: 25px;
+    background-image: url(./img/michael-jordan2.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    
+}
+footer{
+    background-image: url(./img/footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    text-align: center;
+    font-family: initial;
+    letter-spacing: 10px;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    padding-top: 28px;
+    margin-top: 20px;
+    
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-size: 90px;
+    letter-spacing: 10px;
+    color: white;
+}
+h3{
+    padding-top: 15px;
+    padding-bottom: 25px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    letter-spacing: 13px;
+    font-family: initial;
+}
+.rojo{
+    color:red;
+    font-size: 120px;
+}
+.roj{
+    color:red;
+    font-size: 55px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: -1px -1px 2px white;
+}   
+
+.menu > a{
+    margin: 20px 40px;
+    color:red;
+    font-size: 30px;
+    font-weight: 15%;
+
+}
+.menu > a.activo{
+    color: red;
+}
+.menu > a:hover{
+    border-radius: 10px;
+    border: white;
+    color: white;
+    background-color: red;
+}
+section{
+    width: 50%;
+    margin: auto;
+}
+h4{
+    color: white;
+    font-size: 40px;
+    font-family: cursive;
+    letter-spacing: 12px;
+    padding-bottom: 10px;
+}
+ol{
+    color: white;
+    padding: 23px;
+    letter-spacing: 3px;
+    font-size: 23px;
+    font-family: initial;
+}
+ul{
+    color: white;
+    padding: 23px;
+    letter-spacing: 3px;
+    font-size: 23px;
+    font-family: initial;
+}
+img{
+    transition: all 0.5s linear;
+}
+img:hover{
+    transform: scale(0.9);
+}
+.galeria{
+    width: 60%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.galeria img{
+    width: 100%;
+    height: 380px;
+    border: 4px solid red;
+    margin: auto;
+}

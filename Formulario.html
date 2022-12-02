@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./Formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+</head>
+<script>
+    function Mostrar(){
+        var x = document.getElementById("pass");
+        if (x.type == "password") {
+            x.type = "text";
+        } else{
+            x.type = "password";
+        }
+    }
+</script>
+<body>
+    <header>
+        <h1><span class="rojo">M</span>ICHAEL <span class="rojo">J</span>ORDAN</h1>
+        <h3>La Historia de una Leyenda</h3>
+        <br>
+    </header>
+    <main>
+        <div class="menu">
+            <a class="activo" href="./Biografía.html">Biografía</a>
+            <a href="./Temporadas.html">Temporadas</a>
+            <a href="./Records.html">Records</a>
+            <a href="./Jugadas.html">Mejores Jugadas</a>
+            <a href="./Formulario.html">Formulario</a>
+        </div>
+    </main>
+    <div class="contacto">
+        <h1>Contacto</h1>
+        <div class="linea"></div>
+       <form action="contact.php" method="post" class="formulario">
+            <input type="text" placeholder="Tu Nombre" name="nombre">
+            <div class="cajapass">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="password" name="pass" id="pass" placeholder="Contraseña">
+                <input type="checkbox" onclick="Mostrar()">
+            </div>
+            <input type="tel" placeholder="Teléfono" name="telefono">
+            <input type="date" name="fecha" name="fecha" placeholder="fecha de nacimiento">
+            <textarea placeholder="Tu mensaje" rows="3" name="mensaje"></textarea>
+            <select id="pais" name="paise">
+                <option value="australia">España</option>
+                <option value="canada">Italia</option>
+                <option value="usa">Marruecos</option>
+                <option value="usa">Otro</option>
+            </select>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <footer>
+        <h5>Hecho por @javiibt10</h5>
+    </footer>
+</body>
+</html>
